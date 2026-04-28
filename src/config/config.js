@@ -23,6 +23,6 @@ export const config = {
         "GHGEMSSNS"
     ],
     
-    "rateit": "greenhouse-gas-inventory"
+    "rateit": "greenhouse_gas_dashboard"
     
 }
