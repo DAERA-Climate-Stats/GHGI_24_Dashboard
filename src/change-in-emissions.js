@@ -218,8 +218,8 @@ window.addEventListener("DOMContentLoaded", async () => {
         const changeCell = row.insertCell(3);
 
         sectorCell.innerHTML = sector == "Grand total" ? "<strong>All sectors</strong>" : sectorNameTidy(sector);
-        baseCell.innerHTML = sector == "Grand total" ? `<strong>${base_value.toFixed(2)}</strong>` : base_value.toFixed(2);
-        latestCell.innerHTML = sector == "Grand total" ? `<strong>${latest_value.toFixed(2)}</strong>` : latest_value.toFixed(2);
+        baseCell.innerHTML = sector == "Grand total" ? `<strong>${base_value.toFixed(1)}</strong>` : base_value.toFixed(1);
+        latestCell.innerHTML = sector == "Grand total" ? `<strong>${latest_value.toFixed(1)}</strong>` : latest_value.toFixed(1);
         changeCell.innerHTML = `${pct_change}`;
 
         baseCell.style.textAlign = "right";
