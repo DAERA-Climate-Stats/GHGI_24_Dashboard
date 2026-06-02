@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
 
 
-    insertValue("ghg-uk", ghg_uk.toFixed(2));
+    insertValue("ghg-uk", ghg_uk.toFixed(0));
 
     const ghg_change_value = ghg_uk_last - ghg_uk;
     const ghg_pct_change = Math.abs(ghg_change_value / ghg_uk_last * 100).toFixed(0);

@@ -64,7 +64,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       }
 
       const ghg_value = GHGEMSSNS.data[stat][latest_year]["Northern Ireland"][sector]["All pollutants"]  / 1000;
-      insertValue("total-ghg", ghg_value.toFixed(2));
+      insertValue("total-ghg", ghg_value.toFixed(1));
 
       const ghg_ni = GHGEMSSNS.data[stat][first_year]["Northern Ireland"]["Grand total"]["All pollutants"] / 1000;
       const sector_pct = (ghg_value / ghg_ni * 100).toFixed(0);

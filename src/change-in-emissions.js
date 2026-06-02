@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     //// Total Greenhouse Gas Emissions
     const ghg_value = GHGEMSSNS.data[stat][latest_year]["Northern Ireland"]["Grand total"]["All pollutants"] / 1000;
 
-    insertValue("total-ghg", ghg_value.toFixed(2));
+    insertValue("total-ghg", ghg_value.toFixed(1));
 
     const ghg_value_last = GHGEMSSNS.data[stat][last_year]["Northern Ireland"]["Grand total"]["All pollutants"] / 1000;
     const ghg_change_value = ghg_value_last - ghg_value;
